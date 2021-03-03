@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KAMAL</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="includes/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="includes/css/fotorama.css" />
+    <link rel="stylesheet" type="text/css" href="includes/css/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="includes/css/slick-theme.css"
+    />
+    <link rel="stylesheet" type="text/css" href="includes/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="includes/css/new.css" />
+    <meta
+      content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"
+      name="viewport"
+    />
+    <script src="includes/js/jquery.min.js"></script>
+    <script src="includes/js/jquery-ui.js"></script>
+    <script src="includes/js/slick.min.js"></script>
+    <script src="includes/js/jquery.maskedinput.min.js"></script>
+    <script src="includes/js/fotorama.js"></script>
+  </head>
+  <body class="transforming loading">
+    <div class="loader">
+      <div class="logos clear">
+        <div><img src="includes/img/logos/1.svg" alt="" /></div>
+        <div><img src="includes/img/logos/2.svg" alt="" /></div>
+        <div><img src="includes/img/logos/3.svg" alt="" /></div>
+      </div>
+    </div>
+
+    <a href="#" id="cart" class="empty">
+      <div>3</div>
+    </a>
+
+    <header>
+      <div class="wrap-header">
+        <div class="container clear">
+          <div class="header-menu clear float-left">
+            <div class="wrap-header-menu">
+              <ul class="float-left">
+                <li class="dropdown active">
+                  <div><a href="#">О театре</a></div>
+                  <ul>
+                    <li>
+                      <div><a href="#">ИСТОРИЯ</a></div>
+                    </li>
+                    <li class="dropdown">
+                      <div><a href="#">РЕПЕРТУАР</a></div>
+                      <ul>
+                        <li>
+                          <div><a href="#">Активный репертура</a></div>
+                        </li>
+                        <li>
+                          <div><a href="#">Архив</a></div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div><a href="#">ПЕРСОНАЛИИ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ДЛЯ СМИ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">СПОНСОРЫ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">УЧРЕДИТЕЛЬНЫЕ ДОКУМЕНТЫ</a></div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div><a href="#">Афиша</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Визит в театр</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Проекты</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Контакты</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Магазин</a></div>
+                </li>
+                <li>
+                  <div><span>Ещё</span></div>
+                  <ul>
+                    <li>
+                      <div><a href="#">Магазин</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Контакты</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Проекты</a></div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="float-left">
+                <a href="#" class="button">Купить билет</a>
+              </div>
+              <div class="login-link logged">
+                <img src="includes/img/icons/1.svg" alt="" />
+                <div class="link">
+                  <span>Рустем Биктагиров</span>
+                  <ul>
+                    <li class="show">
+                      <div><a href="#">КОРЗИНА (0)</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">МОИ БИЛЕТЫ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ЛИЧНЫЕ ДАННЫЕ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ИНФОРМАЦИЯ</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-control clear float-right">
+            <div class="info-season">114 сезон</div>
+            <div class="login-link logged float-left">
+              <img src="includes/img/icons/1.svg" alt="" />
+              <div class="link">
+                <span>Рустем Биктагиров</span>
+              </div>
+            </div>
+            <div class="lang float-left">
+              <div class="lang-active">
+                <img src="includes/img/langs/1.svg" alt="" />
+              </div>
+              <ul>
+                <li>
+                  <div>
+                    <a href="#"
+                      ><img src="includes/img/langs/2.svg" alt=""
+                    /></a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="#"
+                      ><img src="includes/img/langs/3.svg" alt=""
+                    /></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="burger float-right">
+              <div class="burger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="search float-left">
+              <div class="search-button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-search wrap-header">
+        <div class="container">
+          <form>
+            <input type="text" name="" />
+            <button type="submit">
+              <img src="includes/img/icons/2.1.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div class="loader-animation-wrap">
+      <div class="head">
+        <div class="container clear">
+          <div class="float-right">
+            <div class="inner-menu">
+              <div class="header-menu container">
+                <div class="wrap-header-menu">
+                  <ul>
+                    <li>
+                      <div><a href="#">КОРЗИНА (0)</a></div>
+                    </li>
+                    <li class="active">
+                      <div><a href="#">МОИ БИЛЕТЫ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ЛИЧНЫЕ ДАННЫЕ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ИНФОРМАЦИЯ</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="links float-left clear">
+            <div class="active">
+              <a href="#"><img src="includes/img/logos/1.svg" alt="" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="includes/img/logos/2.svg" alt="" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="includes/img/logos/3.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap-splitter">
+        <div class="container"><div class="splitter thin"></div></div>
+      </div>
+
+      <main>
+        <div class="container">
+          <div class="back-link">
+            <a href="#">Вернуться к списку мероприятий</a>
+          </div>
+          <h1>Корзина</h1>
+          <div class="cart-items">
+            <div class="cart-items__row">
+              <div class="cart-items__left-col">
+                <a href="#" class="cart-items__remove-all">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21">
+                    <path
+                      d="M17.38,4.25H14V3.5A2.77,2.77,0,0,0,11.25.75H7.75A2.77,2.77,0,0,0,5,3.5v.75H1.63a1,1,0,0,0,0,2h.75V17.5a2.75,2.75,0,0,0,2.75,2.75h8.75a2.73,2.73,0,0,0,1.94-.81,2.77,2.77,0,0,0,.81-1.94V6.25h.75a1,1,0,0,0,0-2ZM7,3.5a.75.75,0,0,1,.75-.75h3.5A.75.75,0,0,1,12,3.5v.75H7Zm7.63,14a.79.79,0,0,1-.22.53.77.77,0,0,1-.53.22H5.13A.77.77,0,0,1,4.59,18a.78.78,0,0,1-.21-.53V6.25H14.63Z"
+                    />
+                    <path
+                      d="M7.75,15.88a1,1,0,0,0,1-1V9.63a1,1,0,0,0-2,0v5.25A1,1,0,0,0,7.75,15.88Z"
+                    />
+                    <path
+                      d="M11.25,15.88a1,1,0,0,0,1-1V9.63a1,1,0,0,0-2,0v5.25A1,1,0,0,0,11.25,15.88Z"
+                    />
+                  </svg>
+                  Удалить все товары
+                </a>
+                <ul class="cart-items__list">
+                  <li class="cart-items__list-item">
+                    <div class="cart-items__card">
+                      <img
+                        src="includes/img/cart-items/1.jpg"
+                        alt=""
+                        class="cart-items__card-image"
+                      />
+                      <h4 class="cart-items__card-title">
+                        Сборник видеоверсий спектаклей
+                      </h4>
+                      <div class="cart-items__card-quantity-wrapper">
+                        <div class="cart-items__card-quantity js-quantity">
+                          <button
+                            class="cart-items__card-quantity-btn js-quantity-minus"
+                            type="button"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 6.52 1.18"
+                            >
+                              <path d="M6.52,1.18H0V0H6.52Z" />
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            class="cart-items__card-quantity-input js-quantity-input"
+                            readonly
+                            value="1"
+                          />
+                          <button
+                            class="cart-items__card-quantity-btn js-quantity-plus"
+                            type="button"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 7.8 8.28"
+                            >
+                              <path
+                                d="M4.62,3.32H7.8V4.69H4.62V8.28H3.17V4.69H0V3.32H3.17V0H4.62Z"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="cart-items__card-quantity-per-unit">
+                          3 500 ₽ за шт
+                        </div>
+                      </div>
+                      <div class="cart-items__price">
+                        <div class="cart-items__price-new">7 000 р.</div>
+                        <div class="cart-items__price-old">800 ₽</div>
+                      </div>
+                      <a href="#" class="cart-items__price-delete">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20.89 20.89"
+                        >
+                          <path
+                            d="M20.89,2l-2-2L10.45,8.44,2,0,0,2l8.44,8.45L0,18.89l2,2,8.45-8.44,8.44,8.44,2-2-8.44-8.44Z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="cart-items__list-item">
+                    <div class="cart-items__card">
+                      <img
+                        src="includes/img/cart-items/2.jpg"
+                        alt=""
+                        class="cart-items__card-image"
+                      />
+                      <h4 class="cart-items__card-title">
+                        Зульфира Зарипова. Сольный альбом.
+                      </h4>
+                      <div class="cart-items__card-quantity-wrapper">
+                        <div class="cart-items__card-quantity js-quantity">
+                          <button
+                            class="cart-items__card-quantity-btn js-quantity-minus"
+                            type="button"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 6.52 1.18"
+                            >
+                              <path d="M6.52,1.18H0V0H6.52Z" />
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            class="cart-items__card-quantity-input js-quantity-input"
+                            readonly
+                            value="1"
+                          />
+                          <button
+                            class="cart-items__card-quantity-btn js-quantity-plus"
+                            type="button"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 7.8 8.28"
+                            >
+                              <path
+                                d="M4.62,3.32H7.8V4.69H4.62V8.28H3.17V4.69H0V3.32H3.17V0H4.62Z"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="cart-items__price">700 р.</div>
+                      <a href="#" class="cart-items__price-delete">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20.89 20.89"
+                        >
+                          <path
+                            d="M20.89,2l-2-2L10.45,8.44,2,0,0,2l8.44,8.45L0,18.89l2,2,8.45-8.44,8.44,8.44,2-2-8.44-8.44Z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="cart-items__list-item">
+                    <div class="cart-items__card">
+                      <img
+                        src="includes/img/cart-items/1.jpg"
+                        alt=""
+                        class="cart-items__card-image"
+                      />
+                      <h4 class="cart-items__card-title">
+                        Сборник видеоверсий спектаклей
+                      </h4>
+                      <div class="cart-items__card-quantity-wrapper">
+                        <div class="cart-items__card-quantity js-quantity">
+                          <button
+                            class="cart-items__card-quantity-btn js-quantity-minus"
+                            type="button"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 6.52 1.18"
+                            >
+                              <path d="M6.52,1.18H0V0H6.52Z" />
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            class="cart-items__card-quantity-input js-quantity-input"
+                            readonly
+                            value="1"
+                          />
+                          <button
+                            class="cart-items__card-quantity-btn js-quantity-plus"
+                            type="button"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 7.8 8.28"
+                            >
+                              <path
+                                d="M4.62,3.32H7.8V4.69H4.62V8.28H3.17V4.69H0V3.32H3.17V0H4.62Z"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="cart-items__card-quantity-per-unit">
+                          3 500 ₽ за шт
+                        </div>
+                      </div>
+                      <div class="cart-items__price">
+                        <div class="cart-items__price-new">7 000 р.</div>
+                        <div class="cart-items__price-old">800 ₽</div>
+                      </div>
+                      <a href="#" class="cart-items__price-delete">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20.89 20.89"
+                        >
+                          <path
+                            d="M20.89,2l-2-2L10.45,8.44,2,0,0,2l8.44,8.45L0,18.89l2,2,8.45-8.44,8.44,8.44,2-2-8.44-8.44Z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="cart-items__list-item">
+                    <div class="cart-items__card">
+                      <img
+                        src="includes/img/cart-items/2.jpg"
+                        alt=""
+                        class="cart-items__card-image"
+                      />
+                      <h4 class="cart-items__card-title">
+                        Зульфира Зарипова. Сольный альбом.
+                      </h4>
+                      <div class="cart-items__card-quantity-wrapper">
+                        <div class="cart-items__card-quantity js-quantity">
+                          <button
+                            class="cart-items__card-quantity-btn js-quantity-minus"
+                            type="button"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 6.52 1.18"
+                            >
+                              <path d="M6.52,1.18H0V0H6.52Z" />
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            class="cart-items__card-quantity-input js-quantity-input"
+                            readonly
+                            value="1"
+                          />
+                          <button
+                            class="cart-items__card-quantity-btn js-quantity-plus"
+                            type="button"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 7.8 8.28"
+                            >
+                              <path
+                                d="M4.62,3.32H7.8V4.69H4.62V8.28H3.17V4.69H0V3.32H3.17V0H4.62Z"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="cart-items__price">7 000 р.</div>
+                      <a href="#" class="cart-items__price-delete">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20.89 20.89"
+                        >
+                          <path
+                            d="M20.89,2l-2-2L10.45,8.44,2,0,0,2l8.44,8.45L0,18.89l2,2,8.45-8.44,8.44,8.44,2-2-8.44-8.44Z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="cart-items__right-col">
+                <form
+                  action="/"
+                  method="POST"
+                  class="cart-items__checkout-form"
+                >
+                  <div class="cart-items__promo">
+                    <input
+                      type="text"
+                      class="cart-items__promo-input"
+                      placeholder="Введите промокод"
+                    />
+                    <button class="cart-items__promo-button" type="button">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 19.5 11.38"
+                      >
+                        <path
+                          d="M19.44,5.38a.8.8,0,0,0-.18-.27L14.39.24a.8.8,0,0,0-.27-.18A.81.81,0,0,0,13.81,0a.85.85,0,0,0-.31.06.68.68,0,0,0-.26.18.68.68,0,0,0-.18.26A.85.85,0,0,0,13,.81a.87.87,0,0,0,.06.32.87.87,0,0,0,.18.26l3.49,3.49H.81a.81.81,0,0,0-.57.23A.84.84,0,0,0,0,5.69a.82.82,0,0,0,.24.57.78.78,0,0,0,.57.24H16.72L13.24,10a.81.81,0,0,0,0,1.15.82.82,0,0,0,.57.24.84.84,0,0,0,.58-.24l4.87-4.88A.68.68,0,0,0,19.44,6a.83.83,0,0,0,0-.62Z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="cart-items__total">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th>Ваша корзна</th>
+                          <td>3 товара</td>
+                        </tr>
+                        <tr>
+                          <th>Итого</th>
+                          <td>10 00 ₽</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button class="cart-items__submit" type="submit">
+                    Оформить заказ
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="info clear">
+            <div class="part">
+              <p>
+                Copyright &copy; Татарский государственный Академический театр
+                имени Г.Камала, 2008-2019<br />
+                При копировании информации обязательна активная ссылка:
+                <a href="www.kamalteatr.ru" target="_blank"
+                  >www.kamalteatr.ru</a
+                >
+              </p>
+              <p>
+                Создание и поддержка сайта
+                <a href="https://markweber.ru/" target="_blank"
+                  ><img src="includes/img/icons/MarkWeber.svg" alt="Mark Weber"
+                /></a>
+              </p>
+            </div>
+            <div class="part clear">
+              <div class="part">
+                <p>
+                  420021, Россия, Татарстан, г.Казань, ул. Татарстан д.1 <br />
+                  (843) 293-03-74
+                  <a href="mailto:kamal.teatr@tatar.ru">kamal.teatr@tatar.ru</a>
+                </p>
+                <p class="links">
+                  <a href="#" target="_blank"
+                    ><img src="includes/img/socials/5.svg" alt=""
+                  /></a>
+                  <a href="#" target="_blank"
+                    ><img src="includes/img/socials/6.svg" alt=""
+                  /></a>
+                  <a href="#" target="_blank"
+                    ><img src="includes/img/socials/7.svg" alt=""
+                  /></a>
+                  <a href="#" target="_blank"
+                    ><img src="includes/img/socials/8.svg" alt=""
+                  /></a>
+                  <a href="#" target="_blank">Оценка качества услуг</a>
+                </p>
+              </div>
+              <div class="part">
+                <div>
+                  <img src="includes/img/icons/pay2.svg" alt="" />
+                  <img src="includes/img/icons/pay3.svg" alt="" />
+                  <img src="includes/img/icons/pay4.svg" alt="" />
+                  <img src="includes/img/icons/pay1.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="main-back"></div>
+    <div class="main-back-dark"></div>
+
+    <script src="includes/js/common.js"></script>
+    <script src="includes/js/new.js"></script>
+  </body>
+</html>
