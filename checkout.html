@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KAMAL</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="includes/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="includes/css/fotorama.css" />
+    <link rel="stylesheet" type="text/css" href="includes/css/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="includes/css/slick-theme.css"
+    />
+    <link rel="stylesheet" type="text/css" href="includes/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="includes/css/new.css" />
+    <meta
+      content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"
+      name="viewport"
+    />
+    <script src="includes/js/jquery.min.js"></script>
+    <script src="includes/js/jquery-ui.js"></script>
+    <script src="includes/js/slick.min.js"></script>
+    <script src="includes/js/jquery.maskedinput.min.js"></script>
+    <script src="includes/js/fotorama.js"></script>
+  </head>
+  <body class="transforming loading">
+    <div class="loader">
+      <div class="logos clear">
+        <div><img src="includes/img/logos/1.svg" alt="" /></div>
+        <div><img src="includes/img/logos/2.svg" alt="" /></div>
+        <div><img src="includes/img/logos/3.svg" alt="" /></div>
+      </div>
+    </div>
+
+    <a href="#" id="cart" class="empty">
+      <div>3</div>
+    </a>
+
+    <header>
+      <div class="wrap-header">
+        <div class="container clear">
+          <div class="header-menu clear float-left">
+            <div class="wrap-header-menu">
+              <ul class="float-left">
+                <li class="dropdown active">
+                  <div><a href="#">О театре</a></div>
+                  <ul>
+                    <li>
+                      <div><a href="#">ИСТОРИЯ</a></div>
+                    </li>
+                    <li class="dropdown">
+                      <div><a href="#">РЕПЕРТУАР</a></div>
+                      <ul>
+                        <li>
+                          <div><a href="#">Активный репертура</a></div>
+                        </li>
+                        <li>
+                          <div><a href="#">Архив</a></div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div><a href="#">ПЕРСОНАЛИИ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ДЛЯ СМИ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">СПОНСОРЫ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">УЧРЕДИТЕЛЬНЫЕ ДОКУМЕНТЫ</a></div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div><a href="#">Афиша</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Визит в театр</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Проекты</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Контакты</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Магазин</a></div>
+                </li>
+                <li>
+                  <div><span>Ещё</span></div>
+                  <ul>
+                    <li>
+                      <div><a href="#">Магазин</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Контакты</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Проекты</a></div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="float-left">
+                <a href="#" class="button">Купить билет</a>
+              </div>
+              <div class="login-link logged">
+                <img src="includes/img/icons/1.svg" alt="" />
+                <div class="link">
+                  <span>Рустем Биктагиров</span>
+                  <ul>
+                    <li class="show">
+                      <div><a href="#">КОРЗИНА (0)</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">МОИ БИЛЕТЫ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ЛИЧНЫЕ ДАННЫЕ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ИНФОРМАЦИЯ</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-control clear float-right">
+            <div class="info-season">114 сезон</div>
+            <div class="login-link logged float-left">
+              <img src="includes/img/icons/1.svg" alt="" />
+              <div class="link">
+                <span>Рустем Биктагиров</span>
+              </div>
+            </div>
+            <div class="lang float-left">
+              <div class="lang-active">
+                <img src="includes/img/langs/1.svg" alt="" />
+              </div>
+              <ul>
+                <li>
+                  <div>
+                    <a href="#"
+                      ><img src="includes/img/langs/2.svg" alt=""
+                    /></a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="#"
+                      ><img src="includes/img/langs/3.svg" alt=""
+                    /></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="burger float-right">
+              <div class="burger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="search float-left">
+              <div class="search-button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-search wrap-header">
+        <div class="container">
+          <form>
+            <input type="text" name="" />
+            <button type="submit">
+              <img src="includes/img/icons/2.1.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div class="loader-animation-wrap">
+      <div class="head">
+        <div class="container clear">
+          <div class="float-right">
+            <div class="inner-menu">
+              <div class="header-menu container">
+                <div class="wrap-header-menu">
+                  <ul>
+                    <li>
+                      <div><a href="#">КОРЗИНА (0)</a></div>
+                    </li>
+                    <li class="active">
+                      <div><a href="#">МОИ БИЛЕТЫ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ЛИЧНЫЕ ДАННЫЕ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ИНФОРМАЦИЯ</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="links float-left clear">
+            <div class="active">
+              <a href="#"><img src="includes/img/logos/1.svg" alt="" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="includes/img/logos/2.svg" alt="" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="includes/img/logos/3.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap-splitter">
+        <div class="container"><div class="splitter thin"></div></div>
+      </div>
+
+      <main>
+        <div class="container">
+          <div class="back-link">
+            <a href="#">Вернуться к списку мероприятий</a>
+          </div>
+          <h1>Оформление заказа</h1>
+          <form action="/" method="POST" class="checkout">
+            <div class="checkout__your-goods">
+              <div class="checkout__row">
+                <div class="checkout__left-col">
+                  <div class="checkout__top-row">
+                    <h2 class="checkout__secondary-heading">Ваши товары</h2>
+                    <a href="#" class="checkout__change-btn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 18.94 18.92"
+                      >
+                      
+                        <path
+                          d="M18.43,4.69,14.24.5a1.78,1.78,0,0,0-2.48,0L.52,11.74a1.81,1.81,0,0,0-.39.57A1.74,1.74,0,0,0,0,13v4.19a1.74,1.74,0,0,0,1.75,1.75h4.5A1,1,0,0,0,7,18.63L18.43,7.16a1.8,1.8,0,0,0,.51-1.24A1.73,1.73,0,0,0,18.43,4.69ZM5.84,16.92H2l0-3.81,8-8,3.84,3.83Zm9.41-9.41L11.41,3.67,13,2.09l3.84,3.83Z"
+                        />
+                      </svg>
+                      Изменить
+                    </a>
+                  </div>
+                  <ul class="checkout__list">
+                    <li class="checkout__list-item">
+                      <div class="checkout__card">
+                        <div class="checkout__card-image-container">
+                          <img
+                            src="includes/img/checkout/1.jpg"
+                            alt=""
+                            class="checkout__card-image"
+                          />
+                        </div>
+                        <div class="checkout__card-content">
+                          <div class="checkout__card-main-info">
+                            <h4 class="checkout__card-title">
+                              Сборник видеоверсий спектаклей
+                            </h4>
+                            <div class="checkout__card-quantity">2 шт.</div>
+                          </div>
+                          <div class="checkout__card-price">7 000 р.</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="checkout__list-item">
+                      <div class="checkout__card">
+                        <div class="checkout__card-image-container">
+                          <img
+                            src="includes/img/checkout/2.jpg"
+                            alt=""
+                            class="checkout__card-image"
+                          />
+                        </div>
+                        <div class="checkout__card-content">
+                          <div class="checkout__card-main-info">
+                            <h4 class="checkout__card-title">
+                              Зульфира Зарипова. Сольный альбом
+                            </h4>
+                            <div class="checkout__card-quantity">2 шт.</div>
+                          </div>
+                          <div class="checkout__card-price">7 000 р.</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="checkout__list-item">
+                      <div class="checkout__card">
+                        <div class="checkout__card-image-container">
+                          <img
+                            src="includes/img/checkout/1.jpg"
+                            alt=""
+                            class="checkout__card-image"
+                          />
+                        </div>
+                        <div class="checkout__card-content">
+                          <div class="checkout__card-main-info">
+                            <h4 class="checkout__card-title">
+                              Сборник видеоверсий спектаклей
+                            </h4>
+                            <div class="checkout__card-quantity">2 шт.</div>
+                          </div>
+                          <div class="checkout__card-price">7 000 р.</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="checkout__list-item">
+                      <div class="checkout__card">
+                        <div class="checkout__card-image-container">
+                          <img
+                            src="includes/img/checkout/2.jpg"
+                            alt=""
+                            class="checkout__card-image"
+                          />
+                        </div>
+                        <div class="checkout__card-content">
+                          <div class="checkout__card-main-info">
+                            <h4 class="checkout__card-title">
+                              Зульфира Зарипова. Сольный альбом
+                            </h4>
+                            <div class="checkout__card-quantity">2 шт.</div>
+                          </div>
+                          <div class="checkout__card-price">7 000 р.</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="checkout__right-col">
+                  <div class="checkout__summary">
+                    <div class="checkout__summary-table">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              Количество товара
+                            </th>
+                            <td>
+                              3 товара
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>
+                              Общий вес
+                            </th>
+                            <td>
+                              1 500 г
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>
+                              Стоимость доставки
+                            </th>
+                            <td class="green">
+                              Бесплатно
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="checkout__summary-table">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              Итого
+                            </th>
+                            <td class="total">
+                              10 00 ₽
+                            </td>
+                          </tr>
+                          
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__delivery">
+              <h2 class="checkout__secondary-heading">Адрес доставки</h2>
+              <div class="checkout__row">
+                <div class="checkout__left-col">
+                  <div class="checkout__delivery-fields">
+                    <div class="checkout__delivery-field checkout__delivery-field--long">
+                      <div class="checkout__label">
+                        Введите адрес
+                      </div>
+                      <input type="text" class="checkout__input checkout__input--search">
+                    </div>
+                    <div class="checkout__delivery-field">
+                      <div class="checkout__label">
+                        Квартира
+                      </div>
+                      <input type="text" class="checkout__input ">
+                    </div>
+                    <div class="checkout__delivery-field">
+                      <div class="checkout__label">
+                        Дом
+                      </div>
+                      <input type="text" class="checkout__input ">
+                    </div>
+                    <div class="checkout__delivery-field">
+                      <div class="checkout__label">
+                        Подъезд
+                      </div>
+                      <input type="text" class="checkout__input ">
+                    </div>
+                    <div class="checkout__delivery-field">
+                      <div class="checkout__label">
+                        Этаж
+                      </div>
+                      <input type="text" class="checkout__input ">
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout__right-col">
+
+                </div>
+              </div>
+             
+            </div>
+            <div class="checkout__payment">
+              <h2 class="checkout__secondary-heading">Данные получателя</h2>
+              <div class="checkout__row">
+                <div class="checkout__left-col">
+                  <div class="checkout__payment-fields">
+                    <div class="checkout__payment-field">
+                      <div class="checkout__payment-field-left-col">
+                        <div class="checkout__label">
+                          Имя
+                        </div>
+                       
+                      </div>
+                      <div class="checkout__payment-field-right-col">
+                        <input type="text" class="checkout__input">
+                      </div>
+                    </div>
+                    <div class="checkout__payment-field">
+                      <div class="checkout__payment-field-left-col">
+                        <div class="checkout__label">
+                          Телефон
+                        </div>
+                       
+                      </div>
+                      <div class="checkout__payment-field-right-col">
+                        <input type="tel" class="checkout__input">
+                      </div>
+                    </div>
+                    <div class="checkout__payment-field">
+                      <div class="checkout__payment-field-left-col checkout__payment-field-left-col--flex-start">
+                        <div class="checkout__label">
+                          Комментарии
+                        </div>
+                       
+                      </div>
+                      <div class="checkout__payment-field-right-col">
+                        <textarea class="checkout__input"></textarea>
+                        <div class="checkout__policy">
+                          <label class="checkout__policy-checkbox">
+                            <input type="checkbox" class="checkout__policy-checkbox-input">
+                            <span class="checkout__policy-checkbox-mark">
+
+                            </span>
+                            <span class="checkout__policy-checkbox-text">
+                              Я принимаю <a href="#">
+                                Соглашение об обработке персональных данных
+                              </a>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout__right-col">
+
+                </div>
+              </div>
+           
+            </div>
+            <div class="checkout__shipping">
+              <h2 class="checkout__secondary-heading">Способ доставки</h2>
+              <div class="checkout__row">
+                <div class="checkout__left-col">
+                  <div class="checkout__shipping-choices">
+                    <div class="checkout__shipping-choice">
+                      <label class="checkout__shipping-checkbox">
+                        <input type="radio" name="shipping" class="checkout__shipping-checkbox-input">
+                        <span class="checkout__shipping-checkbox-content">
+                          <span class="checkout__shipping-checkbox-top-row">
+                            <span class="checkout__shipping-checkbox-text">
+                              <strong>СПСР Экспресс</strong> (пеликан-стандарт)
+                            </span>
+                            <img src="includes/img/shipping/1.png" alt="" class="checkout__shipping-checkbox-logo">
+                          </span>
+                          <span class="checkout__shipping-checkbox-bottom-row">
+                            <span class="checkout__shipping-checkbox-price">
+                              741.96 ₽
+                            </span>
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" class="checkout__shipping-checkbox-ok">
+        
+                              <path fill="#3eb1a9" d="M0,13A13,13,0,1,1,13,26,13,13,0,0,1,0,13Z" />
+                              <path fill="#fff"
+                                  d="M18.56,9.3,17.08,8.24a.27.27,0,0,0-.17-.06.24.24,0,0,0-.17.06l-5.4,6.26L9.15,12.61a.38.38,0,0,0-.25-.15.33.33,0,0,0-.24.14L7.48,13.71l-.05,0a.27.27,0,0,0,0,.14.22.22,0,0,0,0,.14l.07.07,3.84,3.32a.37.37,0,0,0,.24.12.4.4,0,0,0,.25-.15l6.74-7.81a.22.22,0,0,0,.06-.14A.21.21,0,0,0,18.56,9.3Z" />
+                            </svg>
+                          </span>
+                        </span> 
+                      </label>
+                    </div>
+                    <div class="checkout__shipping-choice">
+                      <label class="checkout__shipping-checkbox">
+                        <input type="radio" name="shipping" class="checkout__shipping-checkbox-input">
+                        <span class="checkout__shipping-checkbox-content">
+                          <span class="checkout__shipping-checkbox-top-row">
+                            <span class="checkout__shipping-checkbox-text">
+                             
+    
+    
+                              <strong>DPD</strong> (classic - курьером до двери)
+                            </span>
+                            <img src="includes/img/shipping/2.png" alt="" class="checkout__shipping-checkbox-logo">
+                          </span>
+                          <span class="checkout__shipping-checkbox-bottom-row">
+                            <span class="checkout__shipping-checkbox-price">
+                              800 ₽
+                            </span>
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" class="checkout__shipping-checkbox-ok">
+        
+                              <path fill="#3eb1a9" d="M0,13A13,13,0,1,1,13,26,13,13,0,0,1,0,13Z" />
+                              <path fill="#fff"
+                                  d="M18.56,9.3,17.08,8.24a.27.27,0,0,0-.17-.06.24.24,0,0,0-.17.06l-5.4,6.26L9.15,12.61a.38.38,0,0,0-.25-.15.33.33,0,0,0-.24.14L7.48,13.71l-.05,0a.27.27,0,0,0,0,.14.22.22,0,0,0,0,.14l.07.07,3.84,3.32a.37.37,0,0,0,.24.12.4.4,0,0,0,.25-.15l6.74-7.81a.22.22,0,0,0,.06-.14A.21.21,0,0,0,18.56,9.3Z" />
+                            </svg>
+                          </span>
+                        </span> 
+                      </label>
+                    </div>
+                    <div class="checkout__shipping-choice">
+                      <label class="checkout__shipping-checkbox">
+                        <input type="radio" name="shipping" class="checkout__shipping-checkbox-input">
+                        <span class="checkout__shipping-checkbox-content">
+                          <span class="checkout__shipping-checkbox-top-row">
+                            <span class="checkout__shipping-checkbox-text">
+                             
+    
+    
+                             
+    
+                              <strong>DHL Express</strong>(экспресс 18:00)
+                            </span>
+                            <img src="includes/img/shipping/3.png" alt="" class="checkout__shipping-checkbox-logo">
+                          </span>
+                          <span class="checkout__shipping-checkbox-bottom-row">
+                            <span class="checkout__shipping-checkbox-price">
+                              2 500 ₽
+                            </span>
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" class="checkout__shipping-checkbox-ok">
+        
+                              <path fill="#3eb1a9" d="M0,13A13,13,0,1,1,13,26,13,13,0,0,1,0,13Z" />
+                              <path fill="#fff"
+                                  d="M18.56,9.3,17.08,8.24a.27.27,0,0,0-.17-.06.24.24,0,0,0-.17.06l-5.4,6.26L9.15,12.61a.38.38,0,0,0-.25-.15.33.33,0,0,0-.24.14L7.48,13.71l-.05,0a.27.27,0,0,0,0,.14.22.22,0,0,0,0,.14l.07.07,3.84,3.32a.37.37,0,0,0,.24.12.4.4,0,0,0,.25-.15l6.74-7.81a.22.22,0,0,0,.06-.14A.21.21,0,0,0,18.56,9.3Z" />
+                            </svg>
+                          </span>
+                        </span> 
+                      </label>
+                    </div>
+                    <div class="checkout__shipping-choice">
+                      <label class="checkout__shipping-checkbox">
+                        <input type="radio" name="shipping" class="checkout__shipping-checkbox-input">
+                        <span class="checkout__shipping-checkbox-content">
+                          <span class="checkout__shipping-checkbox-top-row">
+                            <span class="checkout__shipping-checkbox-text">
+                             
+                              <strong>
+                                Почта России
+                              </strong>
+                              (наземная посылка)
+                            </span>
+                            <img src="includes/img/shipping/4.png" alt="" class="checkout__shipping-checkbox-logo">
+                          </span>
+                          <span class="checkout__shipping-checkbox-bottom-row">
+                            <span class="checkout__shipping-checkbox-price">
+                              200 ₽
+                            </span>
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" class="checkout__shipping-checkbox-ok">
+        
+                              <path fill="#3eb1a9" d="M0,13A13,13,0,1,1,13,26,13,13,0,0,1,0,13Z" />
+                              <path fill="#fff"
+                                  d="M18.56,9.3,17.08,8.24a.27.27,0,0,0-.17-.06.24.24,0,0,0-.17.06l-5.4,6.26L9.15,12.61a.38.38,0,0,0-.25-.15.33.33,0,0,0-.24.14L7.48,13.71l-.05,0a.27.27,0,0,0,0,.14.22.22,0,0,0,0,.14l.07.07,3.84,3.32a.37.37,0,0,0,.24.12.4.4,0,0,0,.25-.15l6.74-7.81a.22.22,0,0,0,.06-.14A.21.21,0,0,0,18.56,9.3Z" />
+                            </svg>
+                          </span>
+                        </span> 
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout__right-col">
+
+                </div>
+              </div>
+          
+            </div>
+            <div class="checkout__final">
+              <h2 class="checkout__secondary-heading">Оплата</h2>
+              <div class="checkout__row">
+                <div class="checkout__left-col">
+                  <div class="checkout__shipping-choices">
+                    <div class="checkout__shipping-choice">
+                      <label class="checkout__shipping-checkbox">
+                        <input type="radio" name="payment" class="checkout__shipping-checkbox-input">
+                        <span class="checkout__shipping-checkbox-content">
+                          <span class="checkout__shipping-checkbox-top-row">
+                            <span class="checkout__shipping-checkbox-text">
+                              <strong>Uniteller</strong> 
+                              (оплата онлайн)
+                            </span>
+                            <img src="includes/img/shipping/5.png" alt="" class="checkout__shipping-checkbox-logo">
+                          </span>
+                         
+                        </span> 
+                      </label>
+                    </div>
+                 
+                  </div>
+                </div>
+                <div class="checkout__right-col">
+
+                </div>
+              </div>
+            </div>
+            <button class="checkout__submit" type="submit">
+
+              Оплатить заказ
+            </button>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="info clear">
+            <div class="part">
+              <p>
+                Copyright &copy; Татарский государственный Академический театр
+                имени Г.Камала, 2008-2019<br />
+                При копировании информации обязательна активная ссылка:
+                <a href="www.kamalteatr.ru" target="_blank"
+                  >www.kamalteatr.ru</a
+                >
+              </p>
+              <p>
+                Создание и поддержка сайта
+                <a href="https://markweber.ru/" target="_blank"
+                  ><img src="includes/img/icons/MarkWeber.svg" alt="Mark Weber"
+                /></a>
+              </p>
+            </div>
+            <div class="part clear">
+              <div class="part">
+                <p>
+                  420021, Россия, Татарстан, г.Казань, ул. Татарстан д.1 <br />
+                  (843) 293-03-74
+                  <a href="mailto:kamal.teatr@tatar.ru">kamal.teatr@tatar.ru</a>
+                </p>
+                <p class="links">
+                  <a href="#" target="_blank"
+                    ><img src="includes/img/socials/5.svg" alt=""
+                  /></a>
+                  <a href="#" target="_blank"
+                    ><img src="includes/img/socials/6.svg" alt=""
+                  /></a>
+                  <a href="#" target="_blank"
+                    ><img src="includes/img/socials/7.svg" alt=""
+                  /></a>
+                  <a href="#" target="_blank"
+                    ><img src="includes/img/socials/8.svg" alt=""
+                  /></a>
+                  <a href="#" target="_blank">Оценка качества услуг</a>
+                </p>
+              </div>
+              <div class="part">
+                <div>
+                  <img src="includes/img/icons/pay2.svg" alt="" />
+                  <img src="includes/img/icons/pay3.svg" alt="" />
+                  <img src="includes/img/icons/pay4.svg" alt="" />
+                  <img src="includes/img/icons/pay1.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="main-back"></div>
+    <div class="main-back-dark"></div>
+
+    <script src="includes/js/common.js"></script>
+    <script src="includes/js/new.js"></script>
+  </body>
+</html>
