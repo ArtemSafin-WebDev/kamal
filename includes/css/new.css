@@ -1,3 +1,13 @@
+button {
+  border: none;
+  appearance: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  transition: color .2s;
+}
+
+
 .cart-items__row {
   display: flex;
 }
