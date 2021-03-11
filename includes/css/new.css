@@ -586,7 +586,6 @@
   line-height: 19px;
 }
 
-
 .checkout__input--search {
   background-image: url("data:image/svg+xml,%0A%3Csvg width='17' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.84 10.53h-.71l-.27-.23a5.96 5.96 0 001.39-3.82 5.82 5.82 0 10-11.62 0 5.83 5.83 0 009.64 4.45l.27.23v.72l4.49 4.5 1.35-1.35-4.54-4.5zm-5.38 0a4.03 4.03 0 01-4.04-4.05c0-2.26 1.8-4.05 4.04-4.05s4.04 1.8 4.04 4.05c0 2.24-1.8 4.04-4.04 4.04z' fill='%23409690'/%3E%3C/svg%3E");
   background-size: 16px 16px;
@@ -598,7 +597,7 @@ textarea.checkout__input {
   resize: none;
   width: 100%;
   display: block;
- 
+
   box-shadow: none;
   appearance: none;
   height: 90px;
@@ -808,27 +807,106 @@ textarea.checkout__input {
 
 .checkout__submit {
   padding: 17px 100px;
- 
+
   margin-top: 60px;
   flex-shrink: 0;
   background: #3eb1a9;
   border-radius: 4px;
-  transition: background-color .2s;
+  transition: background-color 0.2s;
   appearance: none;
   border: none;
   font: inherit;
   font-size: 16px;
   line-height: 160%;
- 
+
   text-transform: uppercase;
   text-align: center;
   color: white;
   outline: none;
 }
 
-
 .checkout__submit:hover {
   background: #379990;
+}
+
+.new-items__list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dfdfdf;
+  margin-top: 45px;
+  padding: 0 25px;
+}
+
+.new-items__list-item {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.new-items__list-item:last-child {
+  border: none;
+}
+
+.new-items__card {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.new-items__card-title {
+  font-weight: 700;
+  font-size: 16px;
+  width: 30%;
+  flex-grow: 1;
+}
+
+.new-items__card-price {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+  margin-right: 25px;
+}
+
+.new-items__card-old-price {
+  font-weight: 400;
+  color: #c62121;
+  font-size: 16px;
+  position: relative;
+  margin-left: 15px;
+}
+
+.new-items__card-old-price::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 1px;
+  width: 120%;
+  background-color: #c62121;
+  transform: translate(-50%, -50%) rotate(15deg);
+}
+
+.new-items__card-link {
+  background-color: #3eb1a9;
+  color: #fff;
+  font-weight: 600;
+  padding: 15px 28px;
+  display: inline-flex;
+  flex-shrink: 0;
+  white-space: nowrap;
+  border-radius: 2px;
+  font-size: 16px;
+  transition: color 0.2s, background-color 0.2s;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.new-items__card-link:link,
+.new-items__card-link:visited {
+  color: white;
+}
+.new-items__card-link:hover {
+  background-color: #379990;
 }
 @media screen and (max-width: 1440px) {
   .cart-items__left-col {
@@ -862,8 +940,6 @@ textarea.checkout__input {
   .cart-items__card-title {
     width: 280px;
   }
-
- 
 }
 
 @media screen and (max-width: 1270px) {
@@ -895,8 +971,7 @@ textarea.checkout__input {
     width: 100%;
   }
 
-
-  .checkout__right-col { 
+  .checkout__right-col {
     width: 350px;
   }
 }
@@ -1024,8 +1099,6 @@ textarea.checkout__input {
   }
 }
 
-
-
 @media screen and (max-width: 1080px) {
   .cart-items__remove-all {
     font-size: 14px;
@@ -1084,7 +1157,6 @@ textarea.checkout__input {
   }
 }
 
-
 @media screen and (max-width: 980px) {
   .checkout__row {
     display: flex;
@@ -1139,10 +1211,45 @@ textarea.checkout__input {
     margin: 0;
     flex-shrink: 1;
   }
+
+  .new-items__card {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 10px;
+    align-items: baseline;
+    justify-items: flex-start;
+  }
+
+  .new-items__list {
+    padding: 0 15px;
+  }
+
+  .new-items__card-price {
+    margin-right: 0;
+    font-size: 18px;
+  }
+
+  .new-items__card-old-price {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .new-items__card-link {
+    margin: 0;
+    font-size: 14px;
+    padding: 11px 20px;
+    align-self: flex-end;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .new-items__card-title {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-
   .checkout__list {
     padding: 10px 20px;
   }
@@ -1167,7 +1274,7 @@ textarea.checkout__input {
     line-height: 1.2;
   }
 
-  .checkout__your-goods { 
+  .checkout__your-goods {
     margin-bottom: 30px;
   }
 
@@ -1267,10 +1374,6 @@ textarea.checkout__input {
     width: 100%;
     flex-grow: 0;
   }
-
-
-
-  
 
   .checkout__payment-field {
     display: flex;
