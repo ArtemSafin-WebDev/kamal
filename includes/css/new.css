@@ -4,9 +4,8 @@ button {
   outline: none;
   font: inherit;
   color: inherit;
-  transition: color .2s;
+  transition: color 0.2s;
 }
-
 
 .cart-items__row {
   display: flex;
@@ -866,6 +865,7 @@ textarea.checkout__input {
   font-size: 16px;
   width: 30%;
   flex-grow: 1;
+  padding-right: 10px;
 }
 
 .new-items__card-price {
@@ -874,6 +874,7 @@ textarea.checkout__input {
   display: flex;
   align-items: baseline;
   margin-right: 25px;
+  white-space: nowrap;
 }
 
 .new-items__card-old-price {
@@ -918,6 +919,91 @@ textarea.checkout__input {
 .new-items__card-link:hover {
   background-color: #379990;
 }
+
+.new-logo {
+  flex-shrink: 0;
+  display: block;
+  width: 100%;
+  max-width: 810px;
+  padding: 0 16px;
+  float: left;
+}
+
+.new-logo__image {
+  display: block;
+  width: 100%;
+}
+
+
+.sponsors .sponsor .wrapper {
+  display: block;
+}
+
+.item-info-block {
+  margin-bottom: 40px;
+}
+
+.item-info-video {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.item-info-video::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.item-info-video iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.event .content {
+  max-width: 900px;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  height: auto;
+}
+
+.slick-initialized .slick-slide.ticket {
+  display: flex;
+  flex-direction: column;
+}
+
+.tickets .desc {
+  flex-grow: 1;
+}
+
+.tickets .slick-next, .tickets .slick-prev {
+  top: 50%;
+  margin-top: 0;
+  transform: translateY(-50%);
+}
+
+.tickets .slick-prev {
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.billboard .wrap-info .wrap-control .button.disabled {
+  background-color: rgb(219, 219, 219);
+  color: white;
+  cursor: default;
+  pointer-events: none;
+  user-select: none;
+}
+
 @media screen and (max-width: 1440px) {
   .cart-items__left-col {
     width: 40%;
@@ -949,6 +1035,12 @@ textarea.checkout__input {
 @media screen and (max-width: 1400px) {
   .cart-items__card-title {
     width: 280px;
+  }
+}
+
+@media (max-width: 1324px) {
+  .new-logo {
+    max-width: 620px;
   }
 }
 
@@ -1054,6 +1146,37 @@ textarea.checkout__input {
     margin-bottom: 50px;
   }
 }
+
+
+@media screen and (max-width: 1080px) {
+  .cart-items__remove-all {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .cart-items__remove-all svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .cart-items__price-delete svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .cart-items__submit {
+    padding: 12px 24px;
+  }
+
+  .cart-items__card-title {
+    width: 180px;
+  }
+
+  .cart-items__card-quantity-wrapper {
+    margin-right: 30px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .checkout__secondary-heading {
     font-size: 20px;
@@ -1106,35 +1229,6 @@ textarea.checkout__input {
   .checkout__input {
     height: 45px;
     padding: 0 15px;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .cart-items__remove-all {
-    font-size: 14px;
-    line-height: 1.2;
-  }
-
-  .cart-items__remove-all svg {
-    width: 16px;
-    height: 16px;
-  }
-
-  .cart-items__price-delete svg {
-    width: 18px;
-    height: 18px;
-  }
-
-  .cart-items__submit {
-    padding: 12px 24px;
-  }
-
-  .cart-items__card-title {
-    width: 180px;
-  }
-
-  .cart-items__card-quantity-wrapper {
-    margin-right: 30px;
   }
 }
 
