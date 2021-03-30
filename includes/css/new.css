@@ -15,6 +15,12 @@ button {
   display: flex;
 }
 
+
+.billboard .desc {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .cart-items__left-col {
   width: 40%;
   flex-grow: 1;
