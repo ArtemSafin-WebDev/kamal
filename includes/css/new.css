@@ -37,10 +37,17 @@ button {
   line-height: 19px;
   text-transform: uppercase;
   color: #409690;
-  margin-bottom: 20px;
+
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
+}
+
+.cart-items__top-row {
+  margin-bottom: 35px;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
 }
 
 .cart-items__remove-all:link,
@@ -1217,6 +1224,73 @@ textarea.checkout__input {
 .recover {
   padding-top: 3rem;
   padding-bottom: 7rem;
+  position: relative;
+}
+
+.recover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  width: 100%;
+  margin-top: -60px;
+  background-color: #ececec;
+}
+
+.cart-items__links {
+  display: flex;
+  align-items: center;
+}
+
+.cart-items__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-right: 25px;
+  position: relative;
+  display: inline-flex;
+  z-index: 1;
+  text-decoration: none;
+  color: black;
+  transition: color .2s;
+}
+
+.cart-items__link:link,
+.cart-items__link:visited {
+  color: black;
+}
+
+
+.cart-items__link:last-child {
+  margin-right: 0;
+}
+
+
+.cart-items__link:hover,
+.cart-items__link.active {
+  color: #3EB1A9;
+}
+
+
+.cart-items__link.active::before {
+  content: "";
+  background: #34908d;
+  opacity: 0.1;
+  position: absolute;
+  top: 100%;
+  left: -7px;
+  right: -7px;
+  height: 14px;
+  margin-top: -10px;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .recover::before {
+    margin-top: -30px;
+  }
 }
 .recover__heading {
   font-size: 34px;
@@ -1237,7 +1311,7 @@ textarea.checkout__input {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
-  transition: background-color .2s;
+  transition: background-color 0.2s;
 }
 
 .recover__back-link:hover {
@@ -1285,7 +1359,26 @@ textarea.checkout__input {
   background-color: #379990;
 }
 
-.billboard .date, .billboard .desc, .billboard .image, .billboard .info, .billboard .main-slider-dots .dot .wrap-dot .date, .billboard .main-slider-dots .dot .wrap-dot .desc, .billboard .main-slider-dots .dot .wrap-dot .image, .billboard .main-slider-dots .dot .wrap-dot .info, .billboard .main-slider .wrap-slide .date, .billboard .main-slider .wrap-slide .desc, .billboard .main-slider .wrap-slide .image, .billboard .main-slider .wrap-slide .info, .main-slider-dots .dot .wrap-dot .billboard .date, .main-slider-dots .dot .wrap-dot .billboard .desc, .main-slider-dots .dot .wrap-dot .billboard .image, .main-slider-dots .dot .wrap-dot .billboard .info, .main-slider .wrap-slide .billboard .date, .main-slider .wrap-slide .billboard .desc, .main-slider .wrap-slide .billboard .image, .main-slider .wrap-slide .billboard .info {
+.billboard .date,
+.billboard .desc,
+.billboard .image,
+.billboard .info,
+.billboard .main-slider-dots .dot .wrap-dot .date,
+.billboard .main-slider-dots .dot .wrap-dot .desc,
+.billboard .main-slider-dots .dot .wrap-dot .image,
+.billboard .main-slider-dots .dot .wrap-dot .info,
+.billboard .main-slider .wrap-slide .date,
+.billboard .main-slider .wrap-slide .desc,
+.billboard .main-slider .wrap-slide .image,
+.billboard .main-slider .wrap-slide .info,
+.main-slider-dots .dot .wrap-dot .billboard .date,
+.main-slider-dots .dot .wrap-dot .billboard .desc,
+.main-slider-dots .dot .wrap-dot .billboard .image,
+.main-slider-dots .dot .wrap-dot .billboard .info,
+.main-slider .wrap-slide .billboard .date,
+.main-slider .wrap-slide .billboard .desc,
+.main-slider .wrap-slide .billboard .image,
+.main-slider .wrap-slide .billboard .info {
   padding: 10px 0;
 }
 
@@ -1302,17 +1395,15 @@ textarea.checkout__input {
   .event .wrap-event {
     padding-left: 45px;
   }
-  
+
   .event .back-link {
     margin-left: 45px;
   }
-  
+
   .event {
     padding-top: 45px;
   }
 }
-
-
 
 @media screen and (max-width: 1440px) {
   .cart-items__left-col {
@@ -1634,6 +1725,17 @@ textarea.checkout__input {
 
   .cart-items__promo {
     margin-bottom: 30px;
+  }
+
+  .cart-items__top-row {
+    flex-direction: column;
+    align-items: initial;
+    margin-bottom: 20px;
+  }
+
+  .cart-items__remove-all {
+    margin-left: 0;
+    margin-top: 25px;
   }
 }
 
