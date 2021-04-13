@@ -1798,6 +1798,11 @@ textarea.checkout__input {
     flex-direction: column;
   }
 
+
+  .header-menu .wrap-header-menu > ul.float-left > li {
+    display: block !important;
+  }
+
   .billboard .item {
     display: flex;
     flex-direction: column;
