@@ -98,7 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="my-translation__countdown-element-key">секунд</div>
           </div>
         `;
-       
 
         // If the count down is finished, write some text
         if (distance < 0) {
@@ -111,4 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   quantity();
   countdown();
+
+  
+
+ 
 });
