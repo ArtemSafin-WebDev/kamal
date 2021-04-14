@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KAMAL</title>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="includes/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="includes/css/fotorama.css" />
+    <link rel="stylesheet" type="text/css" href="includes/css/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="includes/css/slick-theme.css"
+    />
+    <link rel="stylesheet" type="text/css" href="includes/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="includes/css/new.css" />
+    <meta
+      content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"
+      name="viewport"
+    />
+    <script src="includes/js/jquery.min.js"></script>
+    <script src="includes/js/jquery-ui.js"></script>
+    <script src="includes/js/slick.min.js"></script>
+    <script src="includes/js/jquery.maskedinput.min.js"></script>
+    <script src="includes/js/fotorama.js"></script>
+  </head>
+  <body class="transforming loading">
+    <div class="loader">
+      <div class="logos clear">
+        <div><img src="includes/img/logos/1.svg" alt="" /></div>
+        <div><img src="includes/img/logos/2.svg" alt="" /></div>
+        <div><img src="includes/img/logos/3.svg" alt="" /></div>
+      </div>
+    </div>
+
+    <a href="#" id="cart" class="empty">
+      <div>3</div>
+    </a>
+
+    <header>
+      <div class="wrap-header">
+        <div class="container clear">
+          <div class="header-menu clear float-left">
+            <div class="wrap-header-menu">
+              <ul class="float-left">
+                <li class="dropdown active">
+                  <div><a href="#">О театре</a></div>
+                  <ul>
+                    <li>
+                      <div><a href="#">ИСТОРИЯ</a></div>
+                    </li>
+                    <li class="dropdown">
+                      <div><a href="#">РЕПЕРТУАР</a></div>
+                      <ul>
+                        <li>
+                          <div><a href="#">Активный репертура</a></div>
+                        </li>
+                        <li>
+                          <div><a href="#">Архив</a></div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div><a href="#">ПЕРСОНАЛИИ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ДЛЯ СМИ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">СПОНСОРЫ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">УЧРЕДИТЕЛЬНЫЕ ДОКУМЕНТЫ</a></div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div><a href="#">Афиша</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Визит в театр</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Проекты</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Контакты</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Магазин</a></div>
+                </li>
+                <li>
+                  <div><span>Ещё</span></div>
+                  <ul>
+                    <li>
+                      <div><a href="#">Магазин</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Контакты</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Проекты</a></div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="float-left">
+                <a href="#" class="button">Купить билет</a>
+              </div>
+              <div class="login-link logged">
+                <img src="includes/img/icons/1.svg" alt="" />
+                <div class="link">
+                  <span>Рустем Биктагиров</span>
+                  <ul>
+                    <li class="show">
+                      <div><a href="#">КОРЗИНА (0)</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">МОИ БИЛЕТЫ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ЛИЧНЫЕ ДАННЫЕ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ИНФОРМАЦИЯ</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-control clear float-right">
+            <div class="info-season">114 сезон</div>
+            <div class="login-link logged float-left">
+              <img src="includes/img/icons/1.svg" alt="" />
+              <div class="link">
+                <span>Рустем Биктагиров</span>
+              </div>
+            </div>
+            <div class="lang float-left">
+              <div class="lang-active">
+                <img src="includes/img/langs/1.svg" alt="" />
+              </div>
+              <ul>
+                <li>
+                  <div>
+                    <a href="#"
+                      ><img src="includes/img/langs/2.svg" alt=""
+                    /></a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="#"
+                      ><img src="includes/img/langs/3.svg" alt=""
+                    /></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="burger float-right">
+              <div class="burger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="search float-left">
+              <div class="search-button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-search wrap-header">
+        <div class="container">
+          <form>
+            <input type="text" name="" />
+            <button type="submit">
+              <img src="includes/img/icons/2.1.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div class="loader-animation-wrap">
+      <div class="head">
+        <div class="container clear">
+          <div class="float-right">
+            <div class="inner-menu">
+              <div class="header-menu container">
+                <div class="wrap-header-menu">
+                  <ul>
+                    <li>
+                      <div><a href="#">КОРЗИНА (0)</a></div>
+                    </li>
+                    <li class="active">
+                      <div><a href="#">МОИ БИЛЕТЫ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ЛИЧНЫЕ ДАННЫЕ</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">ИНФОРМАЦИЯ</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="links float-left clear">
+            <div class="active">
+              <a href="#"><img src="includes/img/logos/1.svg" alt="" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="includes/img/logos/2.svg" alt="" /></a>
+            </div>
+            <div>
+              <a href="#"><img src="includes/img/logos/3.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap-splitter">
+        <div class="container"><div class="splitter thin"></div></div>
+      </div>
+
+      <main>
+        <div class="container">
+          <div class="back-link">
+            <a href="#">Вернуться к списку мероприятий</a>
+          </div>
+          <h1>Оформление заказа</h1>
+          <form
+            action="/personal/order.php"
+            method="POST"
+            name="ORDER_FORM"
+            id="bx-soa-order-form"
+            enctype="multipart/form-data"
+            class="checkout"
+          >
+            <input
+              type="hidden"
+              name="sessid"
+              id="sessid"
+              value="178de3f677b61734d57f59d302df7706"
+            />
+            <input type="hidden" name="action" value="saveOrderAjax" />
+            <input type="hidden" name="location_type" value="code" />
+            <input
+              type="hidden"
+              name="BUYER_STORE"
+              id="BUYER_STORE"
+              value="1"
+            />
+            <div id="bx-soa-order">
+              <!--	MAIN BLOCK	-->
+              <div id="bx-soa-main-notifications">
+                <div class="alert alert-danger" style="display: none"></div>
+                <div data-type="informer" style="display: none"></div>
+              </div>
+              <!--	AUTH BLOCK	-->
+              <div
+                id="bx-soa-auth"
+                class="bx-soa-section bx-soa-auth"
+                style="display: none"
+              >
+                <div class="bx-soa-section-title-container">
+                  <h2 class="bx-soa-section-title col-sm-9">
+                    <span class="bx-soa-section-title-count"></span>Авторизация
+                  </h2>
+                </div>
+                <div class="bx-soa-section-content container-fluid"></div>
+              </div>
+
+              
+
+              <!--	BASKET ITEMS BLOCK	-->
+              <div class="checkout__your-goods">
+                <div class="checkout__row">
+                  <div class="checkout__left-col">
+                    <div
+                      id="bx-soa-basket"
+                      data-visited="true"
+                      class="bx-soa-section bx-active"
+                    >
+                      <div class="bx-soa-section-title-container">
+                        <h2 class="checkout__secondary-heading">
+                          Товары в заказе
+                        </h2>
+                      </div>
+
+                      <div class="bx-soa-section-content container-fluid">
+                        <div class="bx-soa-table-fade">
+                          <div style="overflow: auto hidden">
+                            <ul class="checkout__list">
+                              <li
+                                class="checkout__list-item bx-soa-item-tr bx-soa-basket-info bx-soa-item-tr-first"
+                              >
+                                <div class="checkout__card">
+                                  <div
+                                    class="bx-soa-item-td"
+                                   
+                                  >
+                                    <div class="bx-soa-item-block">
+                                      <div class="bx-soa-item-img-block">
+                                        <a
+                                          href="/shop/videos/sbornik-videoversiy-spektakley/"
+                                          ><div
+                                            class="bx-soa-item-imgcontainer" 
+                                            style=" 
+                                              background-image: url('https://new.kamalteatr.ru/upload/resize_cache/iblock/19c/160_160_1/2_0000_Sloy-1.jpg');
+                                              background-image: -webkit-image-set(
+                                                url('https://new.kamalteatr.ru/upload/resize_cache/iblock/19c/160_160_1/2_0000_Sloy-1.jpg')
+                                                  1x,
+                                                url('https://new.kamalteatr.ru/upload/resize_cache/iblock/19c/320_320_1/2_0000_Sloy-1.jpg')
+                                                  2x
+                                              );
+                                            "
+                                          ></div
+                                        ></a>
+                                      </div>
+                                      <div class="bx-soa-item-content">
+                                        <div class="bx-soa-item-title">
+                                          <a
+                                            href="/shop/videos/sbornik-videoversiy-spektakley/"
+                                            >Видеоспектакльләр җыентыгы</a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="bx-soa-item-td bx-soa-item-properties bx-text-right"
+                                  >
+                                    <div
+                                      class="bx-soa-item-td-title visible-xs visible-sm"
+                                    >
+                                      Количество
+                                    </div>
+                                    <div class="bx-soa-item-td-text">
+                                      <span>1&nbsp;шт</span>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="bx-soa-item-td bx-soa-item-properties bx-text-right"
+                                  >
+                                    <div
+                                      class="bx-soa-item-td-title visible-xs visible-sm"
+                                    >
+                                      Сумма
+                                    </div>
+                                    <div class="bx-soa-item-td-text">
+                                      <strong class="bx-price all"
+                                        >3 500 руб.</strong
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--	SIDEBAR BLOCK	-->
+                  <div class="checkout__right-col">
+                    <div id="bx-soa-total" class="checkout__summary">
+                      <div class="bx-soa-cart-total checkout__summary-table">
+                        <div class="bx-soa-cart-total-line">
+                          <span class="bx-soa-cart-t">Товаров на:</span
+                          ><span class="bx-soa-cart-d">3 500 руб.</span>
+                        </div>
+                        <div class="bx-soa-cart-total-line">
+                          <span class="bx-soa-cart-t">Общий вес:</span
+                          ><span class="bx-soa-cart-d">300 г</span>
+                        </div>
+                        <div class="bx-soa-cart-total-line">
+                          <span class="bx-soa-cart-t">Доставка:</span
+                          ><span class="bx-soa-cart-d"
+                            ><span class="bx-soa-price-free"
+                              >бесплатно</span
+                            ></span
+                          >
+                        </div>
+                        <div
+                          class="bx-soa-cart-total-line bx-soa-cart-total-line-total"
+                        >
+                          <span class="bx-soa-cart-t">Итого:</span
+                          ><span class="bx-soa-cart-d"
+                            >3 500 руб.</span
+                          >
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--	REGION BLOCK	-->
+              <div
+                id="bx-soa-region"
+                data-visited="true"
+                class="bx-soa-section bx-active checkout__delivery"
+              >
+                <h2 class="checkout__secondary-heading">Регион доставки</h2>
+                <div class="checkout__row">
+                  <div class="checkout__left-col">
+                    <div
+                      class="bx-soa-section-content checkout__delivery-fields"
+                    >
+                      <div
+                        class="alert alert-danger"
+                        style="display: none"
+                      ></div>
+                      <div
+                        class="checkout__delivery-field checkout__delivery-field--long"
+                      >
+                        <div>
+                          <input type="hidden" name="PERSON_TYPE" value="1" />
+                          <div
+                            data-property-id-row="1"
+                            class="form-group bx-soa-location-input-container"
+                          >
+                            <label class="checkout__label" for="soa-property-1"
+                              >Город доставки</label
+                            >
+
+                            <div id="sls-18524" class="bx-sls">
+                              <div class="dropdown-block bx-ui-sls-input-block">
+                                <span class="dropdown-icon"></span>
+                                <input
+                                  type="text"
+                                  autocomplete="off"
+                                  name="ORDER_PROP_1"
+                                  value=""
+                                  class="dropdown-field"
+                                  placeholder="Введите название ..."
+                                  style="display: none"
+                                />
+                                <div
+                                  class="bx-ui-sls-container"
+                                 
+                                >
+                                  <input
+                                    type="text"
+                                    disabled="disabled"
+                                    autocomplete="off"
+                                    class="bx-ui-sls-route"
+                                   
+                                  /><input
+                                    type="text"
+                                    autocomplete="off"
+                                    value=""
+                                    class="bx-ui-sls-fake"
+                                    placeholder="Введите название ..."
+                                  />
+                                </div>
+
+                                <div class="dropdown-fade2white"></div>
+                                <div class="bx-ui-sls-loader"></div>
+                                <div
+                                  class="bx-ui-sls-clear"
+                                  title="Отменить выбор"
+                                  style="display: none"
+                                ></div>
+                                <div
+                                  class="bx-ui-sls-pane"
+                                
+                                >
+                                  <div class="bx-ui-sls-variants"></div>
+                                </div>
+                              </div>
+
+                              <div class="bx-ui-sls-error-message"></div>
+                            </div>
+                          </div>
+                          <input
+                            type="hidden"
+                            name="RECENT_DELIVERY_VALUE"
+                            value=""
+                          />
+                          <div class="bx-soa-reference">
+                            Выберите свой город в списке. Если вы не нашли свой
+                            город, выберите "другое местоположение", а город
+                            впишите в поле "Город"
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkout__right-col"></div>
+                </div>
+              </div>
+
+              <!--	DELIVERY BLOCK	-->
+              <div
+                id="bx-soa-delivery"
+                data-visited="true"
+                class="bx-soa-section bx-active"
+              >
+                <h2 class="checkout__secondary-heading">Доставка</h2>
+                <div class="checkout__row">
+                  <div class="checkout__left-col">
+                    <div class="bx-soa-section-content container-fluid">
+                      <div
+                        class="alert alert-danger"
+                        style="display: none"
+                      ></div>
+                      <div class="bx-soa-pp row">
+                        <div class="checkout__shipping-choices">
+                          <div class="checkout__shipping-choice bx-selected">
+                            <div class="bx-soa-pp-company-graf-container">
+                              <input
+                                id="ID_DELIVERY_ID_120"
+                                name="DELIVERY_ID"
+                                type="checkbox"
+                                class="bx-soa-pp-company-checkbox"
+                                value="120"
+                              />
+                              <div
+                                class="bx-soa-pp-company-image"
+                                style="
+                                  background-image: url('/local/templates/kamalteatr/components/bitrix/sale.order.ajax/checkout/images/delivery_logo.png');
+                                "
+                              ></div>
+                              <div class="bx-soa-pp-delivery-cost">0 руб.</div>
+                            </div>
+                            <div class="checkout__shipping-checkbox-text">
+                              Самовывоз
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-5 bx-soa-pp-desc-container">
+                          <div class="bx-soa-pp-company">
+                            <div class="bx-soa-pp-company-subTitle">
+                              Самовывоз
+                            </div>
+                            <div class="bx-soa-pp-company-logo">
+                              <div class="bx-soa-pp-company-graf-container">
+                                <div
+                                  class="bx-soa-pp-company-image"
+                                  style="
+                                    background-image: url('/local/templates/kamalteatr/components/bitrix/sale.order.ajax/checkout/images/delivery_logo.png');
+                                  "
+                                ></div>
+                              </div>
+                            </div>
+                            <div class="bx-soa-pp-company-block">
+                              <div class="bx-soa-pp-company-desc">
+                                Служба доставки с настраиваемой ценой и сроком
+                                доставки
+                              </div>
+                            </div>
+                         
+                            <ul class="bx-soa-pp-list">
+                              <li>
+                                <div class="bx-soa-pp-list-termin">
+                                  Стоимость:
+                                </div>
+                                <div class="bx-soa-pp-list-description">
+                                  0 руб.
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkout__right-col"></div>
+                </div>
+              </div>
+              <!--	PICKUP BLOCK	-->
+              <div
+                id="bx-soa-pickup"
+                data-visited="true"
+                class="bx-soa-section bx-active"
+               
+              >
+                <h2 class="bx-soa-section-title checkout__secondary-heading">
+                  Самовывоз
+                </h2>
+
+                <div class="checkout__row">
+                  <img
+                    src="/local/templates/kamalteatr/components/bitrix/sale.order.ajax/checkout/images/pickup_logo.png"
+                    class="bx-soa-pickup-preview-img"
+                  /><strong>Театр Камала</strong><br /><strong>Адрес:</strong>
+                  ул. Татарстан, 1, Казань, Респ. Татарстан, 420021
+                </div>
+              </div>
+              <!--	PAY SYSTEMS BLOCK	-->
+              <div
+                id="bx-soa-paysystem"
+                data-visited="true"
+                class="bx-soa-section bx-active checkout__final"
+              >
+                <h2 class="checkout__secondary-heading">Оплата</h2>
+                <div class="checkout__row">
+                  <div class="checkout__left-col">
+                    <div class="bx-soa-section-content container-fluid">
+                      <div
+                        class="alert alert-danger"
+                        style="display: none"
+                      ></div>
+                      <div class="bx-soa-pp row">
+                        <div class="checkout__shipping-choices">
+                          <div class="checkout__shipping-choice bx-selected">
+                            <div class="bx-soa-pp-company-graf-container">
+                              <input
+                                id="ID_PAY_SYSTEM_ID_3"
+                                name="PAY_SYSTEM_ID"
+                                type="checkbox"
+                                class="bx-soa-pp-company-checkbox"
+                                value="3"
+                              />
+                              <div
+                                class="bx-soa-pp-company-image"
+                                style="
+                                  background-image: url('/upload/sale/paysystem/logotip/361/1624759_1_1_.png');
+                                  background-image: -webkit-image-set(
+                                    url('/upload/sale/paysystem/logotip/361/1624759_1_1_.png')
+                                      1x,
+                                    url('/upload/sale/paysystem/logotip/361/1624759_1_1_.png')
+                                      2x
+                                  );
+                                "
+                              ></div>
+                            </div>
+                            <div class="checkout__shipping-checkbox-text">
+                              Uniteller(физические носители)
+                            </div>
+                          </div>
+                          <div class="checkout__shipping-choice">
+                            <div class="bx-soa-pp-company-graf-container">
+                              <input
+                                id="ID_PAY_SYSTEM_ID_4"
+                                name="PAY_SYSTEM_ID"
+                                type="checkbox"
+                                class="bx-soa-pp-company-checkbox"
+                                value="4"
+                              />
+                              <div
+                                class="bx-soa-pp-company-image"
+                                style="
+                                  background-image: url('/upload/sale/paysystem/logotip/c77/1624759_1_.png');
+                                  background-image: -webkit-image-set(
+                                    url('/upload/sale/paysystem/logotip/c77/1624759_1_.png')
+                                      1x,
+                                    url('/upload/sale/paysystem/logotip/c77/1624759_1_.png')
+                                      2x
+                                  );
+                                "
+                              ></div>
+                            </div>
+                            <div class="checkout__shipping-checkbox-text">
+                              Uniteller
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-5 bx-soa-pp-desc-container">
+                          <div class="bx-soa-pp-company">
+                            <div>
+                              <div class="bx-soa-pp-company-subTitle">
+                                Uniteller(физические носители)
+                              </div>
+                              <div class="bx-soa-pp-company-logo">
+                                <div class="bx-soa-pp-company-graf-container">
+                                  <div
+                                    class="bx-soa-pp-company-image"
+                                    style="
+                                      background-image: url('/upload/sale/paysystem/logotip/361/1624759_1_1_.png');
+                                      background-image: -webkit-image-set(
+                                        url('/upload/sale/paysystem/logotip/361/1624759_1_1_.png')
+                                          1x,
+                                        url('/upload/sale/paysystem/logotip/361/1624759_1_1_.png')
+                                          2x
+                                      );
+                                    "
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="bx-soa-pp-company-block">
+                                <div class="bx-soa-pp-company-desc"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkout__right-col"></div>
+                </div>
+              </div>
+              <!--	BUYER PROPS BLOCK	-->
+              <div
+                id="bx-soa-properties"
+                data-visited="true"
+                class="bx-soa-section bx-active checkout__payment"
+              >
+                <h2 class="checkout__secondary-heading">Покупатель</h2>
+                <div class="checkout__row">
+                  <div class="checkout__left-col">
+                    <div
+                      class="bx-soa-section-content checkout__payment-fields"
+                    >
+                      <div
+                        class="alert alert-danger"
+                        style="display: none"
+                      ></div>
+                      <div class="row">
+                        <div class="checkout__payment-field">
+                          <div
+                            class="form-group bx-soa-customer-field"
+                            data-property-id-row="2"
+                          >
+                            <label for="soa-property-2" class="checkout__label"
+                              >Адрес доставки</label
+                            >
+                            <div class="checkout__payment-field-right-col">
+                              <input
+                                type="text"
+                                size="30"
+                                name="ORDER_PROP_2"
+                                id="soa-property-2"
+                                placeholder=""
+                                class="checkout__input"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group bx-soa-customer-field">
+                            <label
+                              for="orderDescription"
+                              class="checkout__label"
+                              >Комментарии к заказу:</label
+                            ><textarea
+                              id="orderDescription"
+                              cols="4"
+                              class="checkout__input"
+                              name="ORDER_DESCRIPTION"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkout__right-col"></div>
+                </div>
+              </div>
+
+              <!--	ORDER SAVE BLOCK	-->
+              <div id="bx-soa-orderSave">
+                <div class="checkbox"></div>
+                <a
+                  href="javascript:void(0)"
+                  class="checkout__submit"
+                  data-save-button="true"
+                >
+                  Оформить заказ
+                </a>
+              </div>
+
+              <div style="display: none">
+                <div id="bx-soa-basket-hidden" class="bx-soa-section">
+                  <div class="bx-soa-section-content container-fluid">
+                    <div class="bx-soa-table-fade">
+                      <div style="overflow: auto hidden">
+                        <ul class="checkout__list">
+                          <li
+                            class="checkout__list-item bx-soa-item-tr bx-soa-basket-info bx-soa-item-tr-first"
+                          >
+                            <div class="checkout__card">
+                              <div
+                                class="bx-soa-item-td"
+                                style="min-width: 300px"
+                              >
+                                <div class="bx-soa-item-block">
+                                  <div class="bx-soa-item-img-block">
+                                    <a
+                                      href="/shop/videos/sbornik-videoversiy-spektakley/"
+                                      ><div
+                                        class="bx-soa-item-imgcontainer"
+                                        style="
+                                          background-image: url('/upload/resize_cache/iblock/19c/160_160_1/2_0000_Sloy-1.jpg');
+                                          background-image: -webkit-image-set(
+                                            url('/upload/resize_cache/iblock/19c/160_160_1/2_0000_Sloy-1.jpg')
+                                              1x,
+                                            url('/upload/resize_cache/iblock/19c/320_320_1/2_0000_Sloy-1.jpg')
+                                              2x
+                                          );
+                                        "
+                                      ></div
+                                    ></a>
+                                  </div>
+                                  <div class="bx-soa-item-content">
+                                    <div class="bx-soa-item-title">
+                                      <a
+                                        href="/shop/videos/sbornik-videoversiy-spektakley/"
+                                        >Видеоспектакльләр җыентыгы</a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="bx-soa-item-td bx-soa-item-properties bx-text-right"
+                              >
+                                <div
+                                  class="bx-soa-item-td-title visible-xs visible-sm"
+                                >
+                                  Количество
+                                </div>
+                                <div class="bx-soa-item-td-text">
+                                  <span>1&nbsp;шт</span>
+                                </div>
+                              </div>
+                              <div
+                                class="bx-soa-item-td bx-soa-item-properties bx-text-right"
+                              >
+                                <div
+                                  class="bx-soa-item-td-title visible-xs visible-sm"
+                                >
+                                  Сумма
+                                </div>
+                                <div class="bx-soa-item-td-text">
+                                  <strong class="bx-price all"
+                                    >3 500 руб.</strong
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="bx-soa-region-hidden" class="bx-soa-section"></div>
+                <div id="bx-soa-paysystem-hidden" class="bx-soa-section"></div>
+                <div id="bx-soa-delivery-hidden" class="bx-soa-section"></div>
+                <div id="bx-soa-pickup-hidden" class="bx-soa-section"></div>
+                <div id="bx-soa-properties-hidden" class="bx-soa-section"></div>
+                <div id="bx-soa-auth-hidden" class="bx-soa-section">
+                  <div class="bx-soa-section-content container-fluid reg"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="info clear">
+            <div class="part">
+              <p>
+                Copyright &copy; Татарский государственный Академический театр
+                имени Г.Камала, 2008-2019<br />
+                При копировании информации обязательна активная ссылка:
+                <a href="www.kamalteatr.ru" target="_blank"
+                  >www.kamalteatr.ru</a
+                >
+              </p>
+              <p>
+                Создание и поддержка сайта
+                <a href="https://markweber.ru/" target="_blank"
+                  ><img src="includes/img/icons/MarkWeber.svg" alt="Mark Weber"
+                /></a>
+              </p>
+            </div>
+            <div class="part clear">
+              <div class="part">
+                <p>
+                  420021, Россия, Татарстан, г.Казань, ул. Татарстан д.1 <br />
+                  (843) 293-03-74
+                  <a href="mailto:kamal.teatr@tatar.ru">kamal.teatr@tatar.ru</a>
+                </p>
+                <p class="links">
+                  <a href="#" target="_blank"
+                    ><img src="includes/img/socials/5.svg" alt=""
+                  /></a>
+                  <a href="#" target="_blank"
+                    ><img src="includes/img/socials/6.svg" alt=""
+                  /></a>
+                  <a href="#" target="_blank"
+                    ><img src="includes/img/socials/7.svg" alt=""
+                  /></a>
+                  <a href="#" target="_blank"
+                    ><img src="includes/img/socials/8.svg" alt=""
+                  /></a>
+                  <a href="#" target="_blank">Оценка качества услуг</a>
+                </p>
+              </div>
+              <div class="part">
+                <div>
+                  <img src="includes/img/icons/pay2.svg" alt="" />
+                  <img src="includes/img/icons/pay3.svg" alt="" />
+                  <img src="includes/img/icons/pay4.svg" alt="" />
+                  <img src="includes/img/icons/pay1.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="main-back"></div>
+    <div class="main-back-dark"></div>
+
+    <script src="includes/js/common.js"></script>
+    <script src="includes/js/new.js"></script>
+  </body>
+</html>

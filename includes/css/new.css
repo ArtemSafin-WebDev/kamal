@@ -444,12 +444,23 @@ button {
   align-items: center;
 }
 
+
+
+.checkout__card .bx-soa-item-imgcontainer,
 .checkout__card-image-container {
   width: 116px;
   height: 64px;
   flex-shrink: 0;
   margin-right: 20px;
   position: relative;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.checkout__card .bx-soa-item-imgcontainer:last-child {
+  margin-right: 0;
 }
 
 .checkout__card-image {
@@ -474,19 +485,56 @@ button {
   flex-grow: 1;
 }
 
+
+.checkout__card .bx-soa-item-title ,
 .checkout__card-title {
   font-size: 18px;
   line-height: 140%;
   font-weight: 400;
   margin-bottom: 6px;
+  
+}
+.checkout__card .bx-soa-item-td,
+.checkout__card .bx-soa-item-content,
+.checkout__card .bx-soa-item-block {
+  display: contents;
 }
 
+.checkout__card .bx-soa-item-td-title {
+  display: none;
+}
+
+.checkout__card .bx-soa-item-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bx-soa-basket-info .checkout__card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: 'image title price' 'image count count';
+  grid-column-gap: 20px;
+}
+
+.checkout__card .bx-soa-item-properties:not(:last-child) .bx-soa-item-td-text {
+  grid-area: count;
+}
+
+
+.checkout__card .bx-soa-item-img-block {
+  grid-area: image;
+}
+
+.checkout__card .bx-soa-item-properties:not(:last-child),
 .checkout__card-quantity {
   font-size: 18px;
   line-height: 140%;
   color: #c0c1c1;
 }
 
+
+.checkout__card .bx-soa-item-properties:last-child .bx-soa-item-td-text,
 .checkout__card-price {
   text-align: right;
   white-space: nowrap;
@@ -497,11 +545,59 @@ button {
   line-height: 140%;
 }
 
+
+
+.checkout__card .bx-soa-item-properties:last-child .bx-soa-item-td-text {
+  grid-area: price;
+  text-align: left;
+}
+
+
+.checkout__card .bx-soa-item-title {
+  margin-bottom: 0;
+}
 .checkout__summary {
   border: 1px solid #dfdfdf;
   padding: 52px;
   margin-top: 62px;
+
+
+
 }
+
+.bx-ui-sls-container {
+  position: relative;
+  margin-top: 15px;
+}
+
+.bx-ui-sls-route {
+  opacity: 0;
+}
+
+.bx-soa-reference {
+  margin-top: 15px;
+}
+
+.bx-ui-sls-fake {
+  position: absolute;
+  left: 0;
+  top: 0;width: 100%;
+}
+
+.news .item .image {
+  background: #EBF3F3;
+}
+.news .item .image img {
+  transform: none !important;
+  object-fit: contain;
+  object-position: center;
+}
+
+.wrap-main-slider .slick-track {
+  margin: 0;
+}
+
+
 
 .checkout__summary-table th,
 .checkout__summary-table td,
@@ -519,17 +615,25 @@ button {
   margin-bottom: 0;
 }
 
+
+.bx-soa-cart-total-line-total {
+  margin-top: 55px;
+}
+.checkout__summary .bx-soa-cart-total-line,
 .checkout__summary-table tr {
   display: flex;
   align-items: baseline;
   margin-bottom: 24px;
 }
 
+
+.checkout__summary .bx-soa-cart-total-line:last-child,
 .checkout__summary-table tr:last-child {
   margin-bottom: 0;
 }
 
-.checkout__summary-table th {
+.checkout__summary-table th,
+.checkout__summary .bx-soa-cart-t {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -539,7 +643,8 @@ button {
   align-items: baseline;
 }
 
-.checkout__summary-table th::after {
+.checkout__summary-table th::after,
+.checkout__summary .bx-soa-cart-t::after {
   content: "";
   width: 1px;
   border-bottom: 1px dashed #e1e1e1;
@@ -547,15 +652,18 @@ button {
   margin: 0 3px;
 }
 
-.checkout__summary-table td {
+.checkout__summary-table td,
+.checkout__summary .bx-soa-cart-d {
   text-align: right;
   font-size: 20px;
   line-height: 140%;
 }
-
+.checkout__summary-table .bx-soa-price-free,
 .checkout__summary-table td.green {
   color: #3eb1a9;
 }
+
+.checkout__summary-table .bx-soa-cart-total-line-total .bx-soa-cart-d,
 .checkout__summary-table td.total {
   font-size: 24px;
   line-height: 140%;
@@ -830,6 +938,8 @@ textarea.checkout__input {
   opacity: 1;
 }
 
+
+.checkout__summary .btn-order-save,
 .checkout__submit {
   padding: 17px 100px;
 
@@ -848,8 +958,9 @@ textarea.checkout__input {
   text-align: center;
   color: white;
   outline: none;
+  text-decoration: none;
 }
-
+.checkout__summary .btn-order-save:hover,
 .checkout__submit:hover {
   background: #379990;
 }
