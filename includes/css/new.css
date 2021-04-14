@@ -1694,6 +1694,10 @@ textarea.checkout__input {
   .event {
     padding-top: 45px;
   }
+
+  .header-menu .wrap-header-menu > ul li.active ul {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 1440px) {
