@@ -574,7 +574,7 @@ if ($(".main-slider-dots > .wrap-dots").length > 0) {
     $(this).slick({
       infinite: false,
       focusOnSelect: true,
-      slidesToShow: 5,
+      slidesToShow: 4,
       slidesToScroll: 1,
       arrows: false,
       dots: false,

@@ -1051,7 +1051,7 @@ textarea.checkout__input {
   flex-shrink: 0;
   display: block;
   width: 100%;
-  max-width: 810px;
+  max-width: 610px;
   padding: 0 16px;
   float: left;
 }
