@@ -112,6 +112,24 @@ document.addEventListener("DOMContentLoaded", () => {
   countdown();
 
   
+  var reminderCross = document.querySelector('.reminder .cross');
+ 
+  if (reminderCross) {
+    reminderCross.addEventListener('click', function(event) {
+      event.preventDefault();
+      var reminder = document.querySelector('.reminder');
+      sessionStorage.setItem('reminder', 'none');
+      if (reminder) {
+        reminder.style.display = 'none'
+      }
+    })
+  }
 
+  if (sessionStorage.getItem('reminder') === 'none') {
+    var reminder = document.querySelector('.reminder');
+    if (reminder) {
+      reminder.style.display = 'none'
+    }
+  }
  
 });
