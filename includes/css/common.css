@@ -6237,8 +6237,7 @@ p {
 .billboard .main-slider-dots .dot .wrap-dot .image p,
 .main-slider-dots .dot .wrap-dot .billboard .date p,
 .main-slider-dots .dot .wrap-dot .billboard .desc p,
-.main-slider-dots .dot .wrap-dot .billboard .image p,
- {
+.main-slider-dots .dot .wrap-dot .billboard .image p {
   max-width: 170px;
 }
 @media (max-width: 1524px) {
