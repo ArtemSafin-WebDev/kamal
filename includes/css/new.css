@@ -41,8 +41,8 @@
   bottom: auto;
   margin-right: 30px;
   transform-origin: right bottom;
-  transform: scale(0.7);
-  margin-bottom: 10px;
+  transform: scale(0.8);
+  margin-bottom: 7px;
 }
 
 @media screen and (max-width: 1024px) {

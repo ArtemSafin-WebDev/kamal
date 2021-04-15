@@ -2195,7 +2195,7 @@ input[type="checkbox"].failed + span:before {
   border-color: #d74242;
 }
 .head {
-  padding: 50px 20px;
+  padding: 30px 20px;
 }
 @media (max-width: 1024px) {
   .head {
