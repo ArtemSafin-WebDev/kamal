@@ -1,5 +1,5 @@
 .reminder-wrapper {
-  z-index: 35;
+  z-index: 100;
   position: fixed;
   bottom: 38px;
   right: 38px;
@@ -588,6 +588,18 @@ button {
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "image title price" "image count count";
   grid-column-gap: 20px;
+}
+
+.bx-soa-total-mobile {
+  display: none;
+}
+
+.checkout__summary-table .bx-soa-cart-total-button-container {
+  display: none;
+}
+
+.bx-soa-location-input-container .checkout__label {
+  margin-bottom: 20px;
 }
 
 .checkout__card .bx-soa-item-properties:not(:last-child) .bx-soa-item-td-text {
