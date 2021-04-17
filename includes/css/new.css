@@ -7,6 +7,19 @@
   align-items: flex-end;
 }
 
+.event-tabs {
+  padding-top: 0;
+}
+
+.header-menu .wrap-header-menu > ul li.active ul li.active a {
+  color: #3eb1a9;
+}
+
+.person-wrap .info {
+  max-width: 760px;
+  display: block;
+}
+
 @media (max-width: 1024px) {
   .reminder-wrapper {
     right: 30px;
