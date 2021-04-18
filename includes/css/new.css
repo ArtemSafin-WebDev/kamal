@@ -268,6 +268,75 @@
   color: #999999;
 }
 
+.page-table-scroll-wrapper {
+  overflow-y: hidden;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.page-table-wrapper {
+  cursor: -webkit-grab;
+  cursor: grab;
+  padding-bottom: 30px;
+}
+
+
+@media screen and (min-width: 641px) {
+  .page-table-scroll-wrapper::-webkit-scrollbar {
+    background-color: rgba(52, 144, 141, 0.1);
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+  }
+  
+  .page-table-scroll-wrapper::-webkit-scrollbar-thumb {
+    background-color: #3eb1a9;
+    border-radius: 5px;
+  }
+  
+  .page-table-scroll-wrapper::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  .page-table-scroll-wrapper::-webkit-scrollbar-track {
+    background-color: rgba(52, 144, 141, 0.1);
+  }
+}
+
+
+
+.page-table-wrapper table {
+  width: auto;
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+.page-table-wrapper table th {
+  white-space: nowrap;
+  text-align: left;
+}
+
+.page-table-wrapper table td {
+  width: fit-content;
+  text-align: left;
+ 
+}
+
+.page-table-wrapper table td:not(:first-child),
+.page-table-wrapper table th:not(:first-child) {
+  min-width: 230px;
+}
+
+@media screen and (max-width: 640px) {
+  .page-table-scroll-wrapper {
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .cart-empty__title {
     font-size: 28px;
