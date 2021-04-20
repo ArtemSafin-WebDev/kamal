@@ -40,6 +40,10 @@
   display: block;
 }
 
+.fotorama__stage {
+  background-color: #EBF3F3;
+}
+
 .dropdown-block .bx-ui-sls-pane {
   position: static;
   left: 0;

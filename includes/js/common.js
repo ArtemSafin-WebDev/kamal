@@ -137,7 +137,7 @@ $(".burger-button").click(function (e) {
 });
 
 $(".header-menu li.dropdown > div").click(function (e) {
-  e.preventDefault();
+  // e.preventDefault();
   var li = $(this).closest("li");
   if (li.hasClass("show")) {
     li.removeClass("show");
