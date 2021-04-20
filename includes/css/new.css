@@ -24,6 +24,22 @@
   position: relative;
 }
 
+.person-wrap .links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.person-wrap .links a img {
+  display: block;
+}
+.person-wrap .links a img {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+  display: block;
+}
+
 .dropdown-block .bx-ui-sls-pane {
   position: static;
   left: 0;
@@ -285,7 +301,6 @@
   padding-bottom: 30px;
 }
 
-
 @media screen and (min-width: 641px) {
   .page-table-scroll-wrapper::-webkit-scrollbar {
     background-color: rgba(52, 144, 141, 0.1);
@@ -293,22 +308,20 @@
     height: 5px;
     border-radius: 5px;
   }
-  
+
   .page-table-scroll-wrapper::-webkit-scrollbar-thumb {
     background-color: #3eb1a9;
     border-radius: 5px;
   }
-  
+
   .page-table-scroll-wrapper::-webkit-scrollbar-button {
     display: none;
   }
-  
+
   .page-table-scroll-wrapper::-webkit-scrollbar-track {
     background-color: rgba(52, 144, 141, 0.1);
   }
 }
-
-
 
 .page-table-wrapper table {
   width: auto;
@@ -324,7 +337,6 @@
 .page-table-wrapper table td {
   width: fit-content;
   text-align: left;
- 
 }
 
 .page-table-wrapper table td:not(:first-child),
