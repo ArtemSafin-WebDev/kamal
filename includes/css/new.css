@@ -3157,5 +3157,5 @@ textarea.checkout__input {
 
 
 .header-menu .wrap-header-menu > ul.float-left > li:last-child {
-  display: none !important; 
+  display: block !important; 
 }
