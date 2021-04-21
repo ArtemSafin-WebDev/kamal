@@ -30,6 +30,8 @@
   flex-wrap: wrap;
 }
 
+
+
 .person-wrap .links a img {
   display: block;
 }
@@ -3151,4 +3153,9 @@ textarea.checkout__input {
   .checkout__input--search {
     background-position: right 16px center;
   }
+}
+
+
+.header-menu .wrap-header-menu > ul.float-left > li:last-child {
+  display: none !important; 
 }
