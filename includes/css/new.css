@@ -7,6 +7,16 @@
   align-items: flex-end;
 }
 
+.person-wrap:last-child {
+  margin-bottom: -60px;
+}
+
+@media (max-width: 1024px) {
+  .person-wrap:last-child {
+    margin-bottom: -30px;
+  }
+}
+
 @media (max-width: 1024px) {
   .billboard .wrap-info .wrap-control {
     display: flex;
@@ -35,7 +45,7 @@
   }
 
   .gallery .picture::before {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     padding-bottom: 100%;
