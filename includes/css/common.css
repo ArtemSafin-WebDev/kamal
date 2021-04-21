@@ -760,12 +760,7 @@ header .wrap-header:first-child > .container {
     margin-bottom: 22px;
   }
 }
-.header-menu .wrap-header-menu > ul.float-left > li:last-child {
-  display: none;
-}
-.header-menu .wrap-header-menu > ul.float-left > li:last-child > ul > li {
-  display: none;
-}
+
 @media (max-width: 1194px) {
   .header-menu .wrap-header-menu > ul.float-left > li:nth-last-child(2),
   .header-menu .wrap-header-menu > ul.float-left > li:nth-last-child(3) {
@@ -23789,7 +23784,7 @@ th.ui-datepicker-week-end {
     position: static !important;
     visibility: visible;
     opacity: 1;
-    display: none;
+    
   }
 }
 @media (max-width: 1574px) and (min-width: 1020px) {
