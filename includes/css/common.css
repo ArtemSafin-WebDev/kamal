@@ -6252,8 +6252,7 @@ p {
   .billboard .main-slider-dots .dot .wrap-dot .image,
   .main-slider-dots .dot .wrap-dot .billboard .date,
   .main-slider-dots .dot .wrap-dot .billboard .desc,
-  .main-slider-dots .dot .wrap-dot .billboard .image,
-  .main-slider-dots .dot .wrap-dot .info {
+  .main-slider-dots .dot .wrap-dot .billboard .image {
     display: none;
   }
 }

@@ -7,13 +7,59 @@
   align-items: flex-end;
 }
 
+i, em {
+  font-style: italic;
+}
+
 .person-wrap:last-child {
   margin-bottom: -60px;
+}
+
+.scroll-up-btn {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  transition: opacity .3s, visibility 0s linear .3s, background-color .2s;
+  background-color: rgba(62, 177, 168, .5);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-up-btn:hover {
+  background-color: rgba(62, 177, 168, 1);
+}
+
+.show-scroll-top .scroll-up-btn {
+  opacity: 1;
+  visibility: inherit;
+  transition: opacity .3s, visibility .3s, background-color .2s;
+}
+
+.scroll-up-btn svg {
+  width: 12px;
+  height: 7px;
+  flex-shrink: 0;
+  fill: white;
 }
 
 @media (max-width: 1024px) {
   .person-wrap:last-child {
     margin-bottom: -30px;
+  }
+
+  .billboard .date[data-premiere]:before {
+    top: 100%;
+    margin-top: 215px;
+    transform: translateY(-100%);
   }
 }
 
