@@ -7,7 +7,8 @@
   align-items: flex-end;
 }
 
-i, em {
+i,
+em {
   font-style: italic;
 }
 
@@ -28,8 +29,8 @@ i, em {
   justify-content: center;
 
   border-radius: 50%;
-  transition: opacity .3s, visibility 0s linear .3s, background-color .2s;
-  background-color: rgba(62, 177, 168, .5);
+  transition: opacity 0.3s, visibility 0s linear 0.3s, background-color 0.2s;
+  background-color: rgba(62, 177, 168, 0.5);
   opacity: 0;
   visibility: hidden;
 }
@@ -41,7 +42,7 @@ i, em {
 .show-scroll-top .scroll-up-btn {
   opacity: 1;
   visibility: inherit;
-  transition: opacity .3s, visibility .3s, background-color .2s;
+  transition: opacity 0.3s, visibility 0.3s, background-color 0.2s;
 }
 
 .scroll-up-btn svg {
@@ -49,6 +50,29 @@ i, em {
   height: 7px;
   flex-shrink: 0;
   fill: white;
+}
+
+.store {
+  padding: 0 20px;
+}
+
+.fotorama__fullscreen-icon {
+  background-image: url('../img/fullscreen.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 514px) {
+  .store .item {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .store .item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2620,8 +2644,6 @@ textarea.checkout__input {
   .billboard .wrap-info .buttons {
     margin-top: auto;
   }
-
-
 
   .header-menu .wrap-header-menu > ul {
     margin-left: 0;
