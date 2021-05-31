@@ -18,8 +18,8 @@ em {
 
 .scroll-up-btn {
   position: fixed;
-  left: 20px;
-  bottom: 20px;
+  left: 25px;
+  bottom: 80px;
   z-index: 200;
   width: 40px;
   height: 40px;
@@ -33,6 +33,12 @@ em {
   background-color: rgba(62, 177, 168, 0.5);
   opacity: 0;
   visibility: hidden;
+}
+
+@media screen and (max-width: 640px) {
+  .scroll-up-btn {
+    display: none;
+  }
 }
 
 .scroll-up-btn:hover {
@@ -57,7 +63,7 @@ em {
 }
 
 .fotorama__fullscreen-icon {
-  background-image: url('../img/fullscreen.svg');
+  background-image: url("../img/fullscreen.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -586,8 +592,8 @@ em {
 }
 @media screen and (max-width: 668px) {
   .reminder-wrapper .reminder {
-    margin-bottom: 2px;
-    margin-right: 15px;
+    margin-bottom: 70px;
+    margin-right: -60px;
     transform: scale(0.6);
   }
 }
