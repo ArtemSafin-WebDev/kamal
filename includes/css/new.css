@@ -35,9 +35,28 @@ em {
   visibility: hidden;
 }
 
+.event .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.event .info {
+  order: 3;
+  margin-top: 60px;
+}
+
+.event .title_main {
+  margin-top: 0;
+}
+
 @media screen and (max-width: 640px) {
   .scroll-up-btn {
     display: none;
+  }
+
+  .event .info {
+    order: 3;
+    margin-top: 40px;
   }
 }
 
